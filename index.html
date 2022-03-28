@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Шапка-->
     <header class="header">
-        <nav>
-            <a href="" class="logo">Web<span class="logo-span">Studio</span></a>
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="header-link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="header-link">Портфолио</a></li>
-                <li><a href="Контакты" class="header-link">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="auth-nav list">
-            <li><a href="tel:+380961111111" class="header-tel">+38 096 111 11 11</a></li>
-            <li>
-                <a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com</a
+      <nav>
+        <a href="" class="logo">Web<span class="logo-span">Studio</span></a>
+        <ul class="site-nav list">
+          <li><a href="./index.html" class="header-link current">Студия</a></li>
+          <li><a href="./portfolio.html" class="header-link">Портфолио</a></li>
+          <li><a href="Контакты" class="header-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="auth-nav list">
+        <li>
+          <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="header-mail"
+            >info@devstudio.com</a
           >
         </li>
       </ul>
     </header>
+
     <!--Основа-->
     <main>
+      
       <!-- hero -->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">
-          Заказать услугу
-        </button>
+        <button type="button" class="hero-button">Заказать услугу</button>
       </section>
       <!--Особенности-->
       <section class="section-desc">
         <h2 class="hidden">Особенности</h2>
-        <ul class="text list">
-          <li>
+        <div class="container">
+          <ul class="list">
+          <li class="text">
             <h3 class="subject">Внимание к деталям</h3>
             <p class="desc">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="text">
             <h3 class="subject">Пунктуальность</h3>
             <p class="desc">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="text">
             <h3 class="subject">Планирование</h3>
             <p class="desc">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="text">
             <h3 class="subject">Современные технологии</h3>
             <p class="desc">
               Значимость этих проблем настолько очевидна, что реализация
@@ -92,6 +98,7 @@
             <img src="./img/tablet.jpg" alt="Tablet" width="370" />
           </li>
         </ul>
+        </div>
       </section>
       <!--Наша команда-->
       <section class="section command">
@@ -139,7 +146,7 @@
     <!--Подвал-->
     <footer class="footer">
       <a href="" class="logo">Web<span class="logo-span">Studio</span></a>
-                <address>
+      <address>
         <ul class="address list">
           <li>
             <a
@@ -159,7 +166,6 @@
           </li>
         </ul>
       </address>
-                </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
