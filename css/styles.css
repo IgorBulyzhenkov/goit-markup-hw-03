@@ -44,11 +44,15 @@ body {
 .logo-span {
     color: var(--primary-logo-color);
 }
+
+
 /* header */
 
-.header{
+.header {
     outline: 1px solid red;
+    width: 1600px;
 }
+
 
 /* nav */
 
@@ -112,7 +116,6 @@ body {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    
 }
 
 .button:hover {
@@ -172,14 +175,25 @@ body {
 
 /* main */
 
-.section-desc{
-     padding: 94px 215px;
+.section-desc {
+    padding: 94px 215px;
+    outline: 1px solid red;
+    width: 1170px;
 }
 
 .hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-    
+
 .subject {
     color: var(--title-text-color);
     font-weight: 700;
