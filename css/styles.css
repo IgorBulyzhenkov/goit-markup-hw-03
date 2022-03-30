@@ -384,7 +384,9 @@ body {
     margin-bottom: 60px;
 }
 
-.footer-item {}
+.footer-item {
+    margin-top: 9px;
+}
 
 .footer-link {
     color: var(--primery-text-color);
@@ -400,7 +402,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    padding-top: 9px;
 }
 
 .footer-mail:hover,
