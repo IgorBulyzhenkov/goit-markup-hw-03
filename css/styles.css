@@ -29,8 +29,8 @@ body {
     line-height: 1.14;
     width: 1600px;
     min-height: 2349px;
-    margin: 0 auto;
-    /* outline: 2px solid red; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .link {
@@ -41,8 +41,8 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
-    /* outline: 2px solid red; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -51,7 +51,13 @@ body {
 .header {
     min-height: 80px;
     padding-top: 24px;
-    border-bottom:1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header>.container,
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -60,13 +66,21 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px;
 }
 
 .logo-span {
     color: var(--span-logo-color);
 }
 
-.header-list {}
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-list {
+    display: flex;
+    margin-left: auto;
+}
 
 .header-link {
     color: var(--second-text-color);
@@ -88,6 +102,11 @@ body {
     color: var(--first-text-color);
     font-weight: 500;
     letter-spacing: 0.02em;
+    margin-right: 50px;
+}
+
+.header-mail {
+    margin-right: 0;
 }
 
 .header-tel:hover,
@@ -103,13 +122,30 @@ body {
 
 /* --------MAIN-------- */
 
-.main {}
+.main {
+    padding-bottom: 94px;
+}
 
 .examples {}
 
-.examples-list {}
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.examples-item {}
+.btn {
+    padding-top: 94px;
+    padding-bottom: 34px;
+    padding-left: 280px;
+}
+
+.examples-item {
+    margin-right: 8px;
+}
+
+.examples-item:last-child {
+    margin-right: 0;
+}
 
 .examples-button {
     color: var(--second-text-color);
@@ -122,6 +158,7 @@ body {
     text-align: center;
     border-radius: 4px;
     border: 0;
+    padding: 6px 22px;
 }
 
 .examples-button:hover,
@@ -130,11 +167,29 @@ body {
     background-color: var(--accent-color);
 }
 
+.examples-item-box {
+    width: 370px;
+    min-height: 404px;
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.examples-item-box:nth-last-child(3n+1) {
+    margin-right: 0;
+}
+
+.examples-item-box:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 .examples-title {
     color: var(--second-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .examples-after-title {
@@ -147,7 +202,6 @@ body {
 
 .hero {
     background-color: var(--hero-bg-color);
-    /* outline: 1px solid red; */
     min-height: 600px;
     padding-top: 200px;
 }
@@ -161,9 +215,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     max-width: 696px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-
 }
 
 .hero-button {
@@ -185,7 +239,6 @@ body {
 /* --------FEATURES-------- */
 
 .features {
-    /* outline: 2px solid red; */
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -203,10 +256,16 @@ body {
     margin: -1px;
 }
 
-.features-list {}
+.features-list {
+    display: flex;
+}
 
 .features-item {
     max-width: 270px;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-title {
@@ -224,7 +283,6 @@ body {
 /* --------GALARY-------- */
 
 .galary {
-    /* outline: 2px solid red; */
     padding-bottom: 94px;
 }
 
@@ -237,9 +295,11 @@ body {
 }
 
 .galary-list {
+    display: flex;
 }
 
-.galary-item {
+.galary-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .galary-img {}
@@ -251,7 +311,6 @@ body {
     background-color: var(--comand-bg-color);
     min-height: 648px;
     padding-top: 94px;
-    /* outline: 1px solid grey; */
     padding-bottom: 94px;
 }
 
@@ -264,6 +323,7 @@ body {
 }
 
 .command-list {
+    display: flex;
 }
 
 .command-item {
@@ -272,6 +332,10 @@ body {
     min-height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.command-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .command-img {
