@@ -6,6 +6,7 @@
     --second-text-color: #212121;
     --first-btn-color: #2196F3;
     --second-btn-color: #F5F4FA;
+    --personal-bg-color: #FFFFFF;
     --hero-bg-color: #2F303A;
     --primary-bg-color: #E5E5E5;
     --comand-bg-color: #F5F4FA;
@@ -26,22 +27,32 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.14;
-}
-
-.list {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
+    width: 1600px;
+    min-height: 2349px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
 }
 
 .link {
     text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+}
+
 
 /* --------HEADER-------- */
 
-.header {}
+.header {
+    min-height: 80px;
+    padding-top: 24px;
+    border-bottom:1px solid #ECECEC;
+}
 
 .logo {
     color: var(--first-logo-color);
@@ -136,6 +147,9 @@ body {
 
 .hero {
     background-color: var(--hero-bg-color);
+    /* outline: 1px solid red; */
+    min-height: 600px;
+    padding-top: 200px;
 }
 
 .hero-title {
@@ -146,6 +160,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
 }
 
 .hero-button {
@@ -154,16 +172,23 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
 }
 
 
 /* --------FEATURES-------- */
 
-.features {}
+.features {
+    /* outline: 2px solid red; */
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -178,15 +203,16 @@ body {
     margin: -1px;
 }
 
-.container {}
-
 .features-list {}
 
-.features-item {}
+.features-item {
+    max-width: 270px;
+}
 
 .features-title {
     color: var(--second-text-color);
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 .features-after-title {
@@ -197,18 +223,24 @@ body {
 
 /* --------GALARY-------- */
 
-.galary {}
+.galary {
+    /* outline: 2px solid red; */
+    padding-bottom: 94px;
+}
 
 .galary-title {
     color: var(--second-text-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    padding-bottom: 50px;
 }
 
-.galary-list {}
+.galary-list {
+}
 
-.galary-item {}
+.galary-item {
+}
 
 .galary-img {}
 
@@ -217,6 +249,10 @@ body {
 
 .command {
     background-color: var(--comand-bg-color);
+    min-height: 648px;
+    padding-top: 94px;
+    /* outline: 1px solid grey; */
+    padding-bottom: 94px;
 }
 
 .command-title {
@@ -224,13 +260,23 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    padding-bottom: 50px;
 }
 
-.command-list {}
+.command-list {
+}
 
-.command-item {}
+.command-item {
+    background-color: var(--personal-bg-color);
+    max-width: 270px;
+    min-height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
-.command-img {}
+.command-img {
+    margin-bottom: 30px;
+}
 
 .command-title-name {
     color: var(--second-text-color);
@@ -238,6 +284,7 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .command-after-title {
@@ -251,6 +298,8 @@ body {
 
 .footer {
     background-color: var(--futter-bg-color);
+    height: 252px;
+    padding-top: 60px;
 }
 
 .footer-logo {
@@ -267,7 +316,10 @@ body {
 
 .footer-address {}
 
-.footer-list {}
+.footer-list {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 
 .footer-item {}
 
@@ -275,7 +327,7 @@ body {
     color: var(--primery-text-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.71;
 }
 
 .footer-mail,
@@ -285,6 +337,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    padding-top: 9px;
 }
 
 .footer-mail:hover,
