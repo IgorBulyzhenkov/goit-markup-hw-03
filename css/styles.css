@@ -26,10 +26,6 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
-    line-height: 1.14;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .link {
@@ -50,6 +46,7 @@ body {
 .header {
     min-height: 80px;
     padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -84,6 +81,7 @@ body {
 .header-link {
     color: var(--second-text-color);
     font-weight: 500;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -100,6 +98,7 @@ body {
 .header-mail {
     color: var(--first-text-color);
     font-weight: 500;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     margin-right: 50px;
 }
@@ -122,6 +121,7 @@ body {
 /* --------MAIN-------- */
 
 .main {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -133,9 +133,8 @@ body {
 }
 
 .btn {
-    padding-top: 94px;
-    padding-bottom: 34px;
-    padding-left: 280px;
+    margin-bottom: 34px;
+    justify-content: center;
 }
 
 .examples-item {
@@ -182,12 +181,15 @@ body {
     margin-bottom: 0;
 }
 
+.container-box {
+    padding: 20px 24px;
+}
+
 .examples-title {
     color: var(--second-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -203,6 +205,7 @@ body {
     background-color: var(--hero-bg-color);
     min-height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -270,7 +273,10 @@ body {
 .features-title {
     color: var(--second-text-color);
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
 
 .features-after-title {
@@ -290,7 +296,7 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .galary-list {
@@ -318,7 +324,7 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .command-list {
@@ -339,6 +345,11 @@ body {
 
 .command-img {
     margin-bottom: 30px;
+}
+
+.heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .command-title-name {
@@ -363,6 +374,7 @@ body {
     background-color: var(--futter-bg-color);
     height: 252px;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
